@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Android-on-veer : Android, Veer" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Android-on-veer</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/xndcn/android-on-veer">Fork Me on GitHub</a>
+
+          <h1 id="project_title">Android-on-veer</h1>
+          <h2 id="project_tagline">Android, Veer</h2>
+
+          <section id="downloads">
+            <a class="zip_download_link" href="https://github.com/xndcn/android-on-veer/zipball/master">Download this project as a .zip file</a>
+            <a class="tar_download_link" href="https://github.com/xndcn/android-on-veer/tarball/master">Download this project as a tar.gz file</a>
+          </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>Welcome to Android on Veer project.</h3>
+
+<p><strong>Flashing this ROM may damage your Veer! Just for test!</strong></p>
+
+<p>This is homepage of Android-on-Veer project.</p>
+
+<h3>Preface</h3>
+
+<p>As a fake Palm fans, after seeing so much big bangs of mobile phones these years, I will never believe in loves...</p>
+
+<p>There seems both approval and disapproval, for porting Android on Veer.</p>
+
+<p>Those guys disapprove porting Android, are mostly loyal webOS fans, who will never say giving up to webOS...</p>
+
+<p>However, hardware and software are supposed to be separated, and this possibility is provided by Android-on-Veer project.</p>
+
+<p>I will always be happy to see an alternative.</p>
+
+<p>When webOS is totally open-sourced, we may see lots of webOS-on-XXX projects, right？ </p>
+
+<h3>Preparing for Installation</h3>
+
+<p><a href="http://pan.baidu.com/netdisk/extractpublic?username=xndcn">Download files here</a></p>
+
+<p>Please watch out the completeness of these files!</p>
+
+<ol>
+<li>[android-rootfs.tar] size: 71464960, MD5: 326c18b344576a138d9c913927bb56b6</li>
+<li>[boot.tar] size: 6707200, MD5: 960257d17cbb72dd12d7a09636b76409</li>
+<li>[uImage.install] size: 4028346, MD5: 305b3a882ea9ddfe2ef8ff95cc48562a</li>
+</ol><p><strong>There must be more than 1GB free space for internal media partition of Veer</strong></p>
+
+<h3>Installation Steps</h3>
+
+<ol>
+<li>Power up Veer，link USB with PC, and mount as a USB disk. Put android-rootfs.tar, boot.tar into the Veer USB disk.</li>
+<li>Restart Veer，then holding the volume up key，get into Recovery mode (there will be a USB arrow)</li>
+<li>
+<p>In PC, get into the directory of uImage.install, open cmd and put this command:</p>
+
+<p>novacom boot mem:// &lt; uImage.install</p>
+
+<p>You can follow <a href="http://www.howtogeek.com/76960/how-to-install-android-on-your-hp-touchpad/">this way</a> "Install Bootloader"</p>
+
+<p>Put uImage.install into the c:\Program Files\Palm, Inc folder or wherever your novacom executable file installed,  then open a command prompt on your computer and use the cd command to navigate to the folder you transferred the uImage.install to earlier (C:\Program Files\Palm, Inc for Windows). </p>
+
+<p>Then run the command</p>
+
+<p>novacom.exe boot mem:// &lt; uImage.install</p>
+</li>
+<li><p>There will be installing logs in the screen of Veer. After installing, it will restart automatically</p></li>
+<li><p>You will see the moboot multi-boot screen. Use volume key to select, and power button to confirm.</p></li>
+</ol><h3>Problems</h3>
+
+<p>Only touchscreen, wifi, keyboard works.</p>
+
+<p>If you are interested in this project, you can donate to my paypal: xndchn#gmail.com (no more than $1...)</p>
+
+<p>Thanks!</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Android-on-veer maintained by <a href="https://github.com/xndcn">xndcn</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-31144144-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>

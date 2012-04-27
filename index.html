@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -33,63 +34,65 @@
       <section id="main_content" class="inner">
         <h3>Welcome to Android on Veer project.</h3>
 
-<p><strong>Flashing this ROM may damage your Veer! Just for test!</strong></p>
+<p><strong>刷机有风险！仅限Veer用户测试用！</strong></p>
 
-<p>This is homepage of Android-on-Veer project.</p>
+<p><a href="english.html">English version</a></p>
 
-<h3>Preface</h3>
+<p>这是Android-on-Veer项目的首页。</p>
 
-<p>As a fake Palm fans, after seeing so much big bangs of mobile phones these years, I will never believe in loves...</p>
+<h3>写在前面</h3>
 
-<p>There seems both approval and disapproval, for porting Android on Veer.</p>
+<p>作为一名伪Palm友，亲眼见证了这些年来移动终端的腥风血雨之后，我再也不相信爱情了...</p>
 
-<p>Those guys disapprove porting Android, are mostly loyal webOS fans, who will never say giving up to webOS...</p>
+<p>对于在Veer上移植Android这事，有赞成也有反对。</p>
 
-<p>However, hardware and software are supposed to be separated, and this possibility is provided by Android-on-Veer project.</p>
+<p>反对者无非是WebOS死忠，对WebOS永不言弃...</p>
 
-<p>I will always be happy to see an alternative.</p>
+<p>其实硬件和软件本来就应该是分离的，Android-on-Veer无非是提供了一种可能性。</p>
 
-<p>When webOS is totally open-sourced, we may see lots of webOS-on-XXX projects, right？ </p>
+<p>多一种选择，何乐而不为呢？</p>
 
-<h3>Preparing for Installation</h3>
+<p>等到WebOS彻底开源那天，说不定也有WebOS-on-XXX之类蜂拥而出呢？</p>
 
-<p><a href="http://pan.baidu.com/netdisk/extractpublic?username=xndcn">Download files here</a></p>
+<h3>安装准备</h3>
 
-<p>Please watch out the completeness of these files!</p>
+<p><a href="http://pan.baidu.com/netdisk/extractpublic?username=xndcn">在此处下载文件</a></p>
 
-<ol>
-<li>[android-rootfs.tar] size: 71464960, MD5: 326c18b344576a138d9c913927bb56b6</li>
-<li>[boot.tar] size: 6707200, MD5: 960257d17cbb72dd12d7a09636b76409</li>
-<li>[uImage.install] size: 4028346, MD5: 305b3a882ea9ddfe2ef8ff95cc48562a</li>
-</ol><p><strong>There must be more than 1GB free space for internal media partition of Veer</strong></p>
-
-<h3>Installation Steps</h3>
+<p>请注意下载文件完整性。</p>
 
 <ol>
-<li>Power up Veer，link USB with PC, and mount as a USB disk. Put android-rootfs.tar, boot.tar into the Veer USB disk.</li>
-<li>Restart Veer，then holding the volume up key，get into Recovery mode (there will be a USB arrow)</li>
+<li>下载[android-rootfs.tar] 大小：71464960，MD5: 326c18b344576a138d9c913927bb56b6</li>
+<li>下载[boot.tar] 大小：6707200，MD5: 960257d17cbb72dd12d7a09636b76409</li>
+<li>下载[uImage.install] 大小：4028346，MD5: 305b3a882ea9ddfe2ef8ff95cc48562a</li>
+</ol><p>注意，Veer的U盘需要有1GB以上空闲空间。</p>
+
+<h3>安装方法</h3>
+
+<ol>
+<li>打开Veer，连上USB进入U盘模式，将android-rootfs.tar, boot.tar放入U盘根目录下</li>
+<li>重启Veer，按住音量上键，进入Recovery模式（出现USB箭头）</li>
 <li>
-<p>In PC, get into the directory of uImage.install, open cmd and put this command:</p>
+<p>进入uImage.install所在目录，在PC端输入</p>
 
 <p>novacom boot mem:// &lt; uImage.install</p>
 
-<p>You can follow <a href="http://www.howtogeek.com/76960/how-to-install-android-on-your-hp-touchpad/">this way</a> "Install Bootloader"</p>
-
-<p>Put uImage.install into the c:\Program Files\Palm, Inc folder or wherever your novacom executable file installed,  then open a command prompt on your computer and use the cd command to navigate to the folder you transferred the uImage.install to earlier (C:\Program Files\Palm, Inc for Windows). </p>
-
-<p>Then run the command</p>
-
-<p>novacom.exe boot mem:// &lt; uImage.install</p>
+<p>或者参照<a href="http://www.mcplive.cn/index.php/article/index/id/10759/page/2">这里的做法</a>，把uImage.install复制到novacom的安装目录下再执行novacom boot mem:// &lt; uImage.install</p>
 </li>
-<li><p>There will be installing logs in the screen of Veer. After installing, it will restart automatically</p></li>
-<li><p>You will see the moboot multi-boot screen. Use volume key to select, and power button to confirm.</p></li>
-</ol><h3>Problems</h3>
+<li><p>屏幕将输出安装信息，待全部完成后自动重启。</p></li>
+<li><p>可以看见moboot多启动界面了。音量键选择，电源键确认。</p></li>
+</ol><p>第一次进入Android模式可能比较慢...</p>
 
-<p>Only touchscreen, wifi, keyboard works.</p>
+<h3>存在问题</h3>
 
-<p>If you are interested in this project, you can donate to my paypal: xndchn#gmail.com (no more than $1...)</p>
+<p>目前只有触摸屏，键盘，WiFi可以工作，其他驱动有待开发。</p>
 
-<p>Thanks!</p>
+<p>屏幕颜色有点问题。 //已修复！</p>
+
+<p>关闭屏幕触摸屏还在工作...</p>
+
+<p>等等...</p>
+
+<p>如果你对这个项目感兴趣，欢迎<a href="https://me.alipay.com/xndcn">捐助</a>（请不要超过1元...）不胜感激！</p>
       </section>
     </div>
 
@@ -115,3 +118,4 @@
 
   </body>
 </html>
+
